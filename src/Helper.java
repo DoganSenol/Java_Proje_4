@@ -206,7 +206,7 @@ public class Helper {
     }
 
     private static void showUserMenu() throws InterruptedException {
-        String tercih = "";
+        String tercih = null;
         //TODO Kullanıcı Çıkış Yapmadığı Sürece User Menüde Kalsın...
         do{
             System.out.println(
@@ -227,7 +227,7 @@ public class Helper {
             //TODO Kullanıcıdan alacağınız tercihlere göre ilgili menüye (metoda) yönlendirme yapınız...
 
             System.out.print("User Menüden bir tercih yapiniz: ");
-            tercih=oku.nextLine().toLowerCase();
+            tercih=oku.nextLine();
 
             switch (tercih){
                 case "1":
@@ -259,7 +259,6 @@ public class Helper {
                     break;
                 case "Q":
                     projeDurdur();
-                    break;
                 default:
                     System.out.println("Lutfen gecerli bir tercih giriniz");
             }
