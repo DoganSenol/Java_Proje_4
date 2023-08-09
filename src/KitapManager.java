@@ -138,8 +138,9 @@ public class KitapManager extends Veritabani {
         for (int i = 0; i < 20; i++) {
             Thread.sleep(100);
             System.out.print(">");
-        }
 
+        }
+        System.out.println("Kitap silindi");
         //ARTIK UYGUN YERLERDE BEKLEMEDİĞİNİZ SONUÇLAR İÇİN TRY CATCH KULLANABİLİRSİNİZ...
         //////////////////////////////////////////////////////////////////////////////////////////////////
         try {
